@@ -43,7 +43,7 @@
         compatible = "zmk,combos";
 
         // ESC
-        combo_lbkt {
+        combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
@@ -148,8 +148,8 @@
         //│  PREV    │  NEXT    │  PLAY    │  BT_PRV  │  BT_NXT  │   │  HOME    │  END     │  PG_UP   │  PG_DN   │  F12     │
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            &kp F1        &kp F2        &kp F3      &kp F4   &kp F5    &kp F6     &kp F7    &kp F8     &kp F9     &kp F10
-            &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp F11
+            &kp F1        &kp F2        &kp F3      &kp F4      &kp F5    &kp F6     &kp F7    &kp F8     &kp F9     &kp F10
+            &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp F11
             &kp C_PREV    &kp C_NEXT    &kp C_PLAY  &bt BT_PRV  &bt BT_NXT  &kp HOME   &kp END   &kp PG_UP  &kp PG_DN  &kp F12
                                              &trans     &trans         &trans     &trans
             >;
@@ -164,7 +164,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ BT 0     │ BT 1     │ BT 2     │ BT 3     │ BT 4     │   │ 1        │ 2        │ 3        │ .        │ =        │
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                 │          │          │   │          │ 0        │
+        //                                 │          │          │   │ 0        │          │
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
            &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &kp N7     &kp N8     &kp N9     &kp ASTRK  &kp FSLH
