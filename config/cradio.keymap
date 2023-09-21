@@ -5,9 +5,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Home row mods macro (SCGA AGCS)
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LCTRL k2  &ht LGUI k3  &ht LALT k4
-#define HRMR(k1,k2,k3,k4) &ht RALT k1  &ht RGUI k2  &ht RCTRL k3  &ht RSHFT k4
+// Home row mods macro (ACGS)
+#define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LCTRL k2  &ht LGUI k3  &ht LSHFT k4
+#define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RCTRL k3  &ht RALT k4
 
 / {
     behaviors {
