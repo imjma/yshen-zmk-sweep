@@ -9,8 +9,8 @@
 // #define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LCTRL k2  &ht LGUI k3  &ht LSHFT k4
 // #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RCTRL k3  &ht RALT k4
 
-#define HRML(k1,k2,k3,k4) &thm LALT k1  &thm LCTRL k2  &thm LGUI k3  &thm LSHFT k4
-#define HRMR(k1,k2,k3,k4) &thm RSHFT k1  &thm RGUI k2  &thm RCTRL k3  &thm RALT k4
+#define HRML(k1,k2,k3,k4) &hm LALT k1  &hm LCTRL k2  &hm LGUI k3  &hm LSHFT k4
+#define HRMR(k1,k2,k3,k4) &hm RSHFT k1  &hm RGUI k2  &hm RCTRL k3  &hm RALT k4
 
 / {
     behaviors {
@@ -135,6 +135,61 @@
             key-positions = <5 6>;
             bindings = <&kp RPAR>;
             layers = <0>;
+        };
+
+        combo_c_spc {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <20 21>;// zx
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_tab_next {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 13>;// df
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_tab_prev {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <10 11>;// as
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_todo {
+            bindings = <&macro_todo>;
+            key-positions = <17 18>; // gh
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        combo_email {
+            bindings = <&macro_email>;
+            key-positions = <3 31>; // em
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        macro_todo: macro_todo {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_TODO";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp MINUS &kp SPACE &kp LBKT &kp SPACE &kp RBKT &kp SPACE>;
+        };
+
+        macro_email: macro_email {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_EMAIL";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp Y &kp S &kp H &kp E &kp N &kp F &kp A &kp B &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
         };
     };
 
