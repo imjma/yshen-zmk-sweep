@@ -160,14 +160,14 @@
 
         combo_todo {
             bindings = <&macro_todo>;
-            key-positions = <17 18>; // gh
+            key-positions = <14 15>; // gh
             layers = <0>;
             timeout-ms = <50>;
         };
 
         combo_email {
             bindings = <&macro_email>;
-            key-positions = <3 31>; // em
+            key-positions = <2 26>; // em
             timeout-ms = <50>;
             layers = <0>;
         };
