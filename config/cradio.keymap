@@ -6,9 +6,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro (ACGS for MacOS), try ht/hm/bhm/thm for different hold-tap flavors
-// #define HRML(k1,k2,k3,k4) &ht LALT k1  &ht LCTRL k2  &ht LGUI k3  &ht LSHFT k4
-// #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RCTRL k3  &ht RALT k4
-
 #define HRML(k1,k2,k3,k4) &thm LALT k1  &thm LCTRL k2  &thm LGUI k3  &thm LSHFT k4
 #define HRMR(k1,k2,k3,k4) &thm RSHFT k1  &thm RGUI k2  &thm RCTRL k3  &thm RALT k4
 
@@ -22,28 +19,6 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
-        // tap-preferred homerow mods
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        // balanced homerow mods
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "balanced_homerow_mods";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -137,37 +112,73 @@
             layers = <0>;
         };
 
+        // -
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        // _
+        combo_under {
+            bindings = <&kp UNDER>;
+            key-positions = <22 23>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        // =
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        // +
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <27 28>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        // C-SPC
         combo_c_spc {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <20 21>;// zx
+            key-positions = <20 21>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
+        // C-TAB
         combo_tab_next {
             bindings = <&kp LC(TAB)>;
-            key-positions = <12 13>;// df
+            key-positions = <12 13>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
+        // C-S-TAB
         combo_tab_prev {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <10 11>;// as
+            key-positions = <10 11>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
+        // - [ ]
         combo_todo {
             bindings = <&macro_todo>;
-            key-positions = <14 15>; // gh
+            key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         combo_email {
             bindings = <&macro_email>;
-            key-positions = <2 26>; // em
+            key-positions = <2 26>;
             timeout-ms = <50>;
             layers = <0>;
         };
