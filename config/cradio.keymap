@@ -112,6 +112,14 @@
             layers = <0>;
         };
 
+        // `
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
         // -
         combo_minus {
             bindings = <&kp MINUS>;
@@ -144,10 +152,10 @@
             layers = <0>;
         };
 
-        // C-SPC
-        combo_c_spc {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <20 21>;
+        // ~
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <28 29>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -176,6 +184,7 @@
             timeout-ms = <50>;
         };
 
+        // gmail
         combo_email {
             bindings = <&macro_email>;
             key-positions = <2 26>;
