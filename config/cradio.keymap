@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Home row mods macro (ACGS for MacOS), try ht/hm/bhm/thm for different hold-tap flavors
+// Home row mods macro (ACGS for MacOS)
 #define HRML(k1,k2,k3,k4) &thm LALT k1  &thm LCTRL k2  &thm LGUI k3  &thm LSHFT k4
 #define HRMR(k1,k2,k3,k4) &thm RSHFT k1  &thm RGUI k2  &thm RCTRL k3  &thm RALT k4
 
@@ -218,7 +218,8 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,       SEMI)
+            //HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,       SEMI)
+            &thm LALT A  &thm LCTRL S  &thm LGUI D  &thm LSHFT F &kp G   &kp H    &thm RSHFT J  &thm RGUI K  &thm RCTRL L  &thm RALT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                             &lt 2 TAB   &kp SPACE     &kp ENTER  &lt 1 BSPC
             >;
