@@ -216,7 +216,7 @@
 
         // - [ ]
         combo_todo {
-            bindings = <&macro_todo>;
+            bindings = <&todo>;
             key-positions = <14 15>;
             layers = <0>;
             timeout-ms = <50>;
@@ -224,7 +224,7 @@
 
         // email
         combo_email {
-            bindings = <&macro_email>;
+            bindings = <&email>;
             key-positions = <2 26>;
             timeout-ms = <50>;
             layers = <0>;
