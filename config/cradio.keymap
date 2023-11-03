@@ -321,7 +321,6 @@
             //HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,       SEMI)
             &thm LALT A  &thm LCTRL S  &thm LGUI D  &thm LSHFT F &kp G   &kp H    &thm RSHFT J  &thm RGUI K  &thm RCTRL L  &thm RALT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                            //&lt 2 TAB   &kp SPACE     &kp ENTER  &lt 1 BSPC
                                             &mlt 2 TAB   &kp SPACE     &kp ENTER  &mlt 1 BSPC
             >;
         };
