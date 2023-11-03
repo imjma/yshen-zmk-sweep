@@ -14,13 +14,14 @@ Layer 2 (right layer) --- Numbers & Symbols
 
 ![Layer 2](./img/right.png)
 
-Layer 3 (tri layer) --- Bluetooth & Number Pad
+Layer 3 (tri layer) --- Number Pad, Bluetooth & Mouse
 
 ![Layer 3](./img/tri.png)
 
-Check [Corne Config](https://github.com/yshenfab/zmk-corne) for more info.
+Mouse emulations have been added to Layer 3 (the above figure is not updated),
+check [Corne Config](https://github.com/yshenfab/zmk-corne) for more info.
 
 ## Macros & Combos
 
-Zmk use key positions for combos, the 34 key matirx is defined as
+ZMK use key positions for combos, the 34 key matirx is defined as
 ![34 key matrix](./img/keypos_34keys.png)
