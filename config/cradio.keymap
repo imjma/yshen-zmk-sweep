@@ -363,7 +363,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp N3 &kp N1 &kp SPACE &kp LS(G) &kp O &kp R &kp D &kp O &kp N &kp SPACE &kp LS(S) &kp T &kp COMMA &kp SPACE &kp LS(B) &kp U &kp R &kp W &kp O &kp O &kp D &kp SPACE &kp LS(N) &kp LS(S) &kp LS(W) &kp SPACE &kp N2 &kp N1 &kp N3 &kp N4>;
+            bindings = <&kp N1 &kp FLSH &kp N3 &kp N1 &kp SPACE &kp LS(G) &kp O &kp R &kp D &kp O &kp N &kp SPACE &kp LS(S) &kp T &kp COMMA &kp SPACE &kp LS(B) &kp U &kp R &kp W &kp O &kp O &kp D &kp SPACE &kp LS(N) &kp LS(S) &kp LS(W) &kp SPACE &kp N2 &kp N1 &kp N3 &kp N4>;
         };
     };
 
