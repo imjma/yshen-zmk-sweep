@@ -21,17 +21,6 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
         // timerless homerow mods
         thm: timerless_homerow_mods {
             label = "timeless_homerow_mods";
@@ -382,7 +371,8 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,       SEMI)
+            //HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,       SEMI)
+            &thm LCTRL A  &thm LALT S  &thm LGUI D  &thm LSHFT F &kp G  &kp H   &thm RSHFT J  &thm RGUI K  &thm RALT L  &thm RCTRL SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                             &mlt 2 TAB   &kp SPACE     &kp ENTER  &mlt 1 BSPC
             >;
