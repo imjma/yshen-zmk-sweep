@@ -249,6 +249,16 @@
             bindings = <&kp PIPE>;
             key-positions = <18 28>;
         };
+
+        combo_tab_next {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <0 10>;
+        };
+
+        combo_tab_prev {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <10 20>;
+        };
     };
 
     macros {
