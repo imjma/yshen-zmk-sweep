@@ -96,7 +96,7 @@
         };
 
         combo_repeat {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <12 13>;
         };
 
@@ -191,22 +191,22 @@
         };
 
         combo_rml {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <16 17>;
         };
 
         combo_rmr {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <17 18>;
         };
 
         combo_rll {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <26 27>;
         };
 
         combo_rlr {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <27 28>;
         };
 
@@ -236,7 +236,7 @@
         };
 
         combo_rmvl {
-            bindings = <&none>;
+            bindings = <&trans>;
             key-positions = <17 27>;
         };
 
@@ -306,10 +306,10 @@
 
         tri_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans                &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))  &trans  &trans
-&bootloader   &trans        &trans        &trans        &trans          &trans                &kp LA(LC(LEFT))      &kp LC(LA(RIGHT))      &trans  &trans
-&bt BT_CLR    &trans        &trans        &trans        &trans          &kp LS(LG(NUMBER_4))  &kp LA(LC(ENTER))     &kp LA(LC(C))          &trans  &trans
-                                          &trans        &trans          &trans                &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(RIGHT)))  &trans  &kp LG(LS(NUMBER_4))
+&bootloader   &trans        &trans        &trans        &trans          &trans  &kp LA(LC(LEFT))      &kp LC(LA(RIGHT))      &trans  &trans
+&bt BT_CLR    &trans        &trans        &trans        &trans          &trans  &kp LA(LC(ENTER))     &kp LA(LC(C))          &trans  &trans
+                                          &trans        &trans          &trans  &trans
             >;
         };
     };
