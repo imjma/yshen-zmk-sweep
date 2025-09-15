@@ -308,10 +308,10 @@
 
         left_layer {
             bindings = <
-&kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans
-&kp CARET  &kp AMPS   &kp ASTRK  &kp MINUS   &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
-&kp UNDER  &kp TILDE  &kp GRAVE  &trans      &kp LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                 &trans      &trans            &trans        &mo 3
+&kp MINUS       &kp PLUS   &kp AMPS    &kp ASTRK    &kp GRAVE    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &kp BACKSLASH
+&kp UNDER       &kp TILDE  &kp DOLLAR  &kp PERCENT  &kp CARET    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS   &kp COLON
+&kp LEFT_SHIFT  &kp PIPE   &kp EXCL    &kp AT       &kp HASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp SLASH
+                                       &trans       &trans       &kp NUMBER_0  &mo 3
             >;
         };
 
