@@ -227,16 +227,16 @@
 &trans                 &trans  &trans              &kp LG(LS(NUMBER_4))  &trans               &kp LG(GRAVE)  &kp END        &kp HOME     &trans     &trans
 &kp LG(LC(LA(LEFT)))   &trans  &kp LC(LA(LS(UP)))  &kp LC(LA(LEFT))      &kp LC(LA(RIGHT))    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans
 &kp LG(LC(LA(RIGHT)))  &trans  &kp LC(LA(C))       &trans                &kp LC(LA(RET))      &trans         &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans
-                                                   &mo 3                 &trans               &trans         &trans
+                                                   &kp LEFT_GUI          &mo 3                &trans         &trans
             >;
         };
 
         left_layer {
             bindings = <
-&trans     &kp ESC       &kp MINUS     &kp EQUAL       &kp TAB      &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp ENTER    &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON
-&kp CAPS   &trans        &trans        &trans          &trans       &kp DOT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH
-                                       &trans          &trans       &kp NUMBER_0  &mo 3
+&trans     &kp ESC       &kp MINUS     &kp EQUAL       &kp TAB      &kp GRAVE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp ENTER    &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON
+&kp CAPS   &trans        &trans        &trans          &trans       &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH
+                                       &trans          &trans       &mo 3      &kp NUMBER_0
             >;
         };
 
