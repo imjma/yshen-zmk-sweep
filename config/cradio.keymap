@@ -239,10 +239,10 @@
 
         right_layer {
             bindings = <
-&kp TAB    &trans    &trans  &trans        &trans               &kp LG(GRAVE)  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp DELETE
-&kp LCTRL  &trans    &trans  &trans        &kp LC(LA(RIGHT))    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans
-&kp LSHFT  &kp LALT  &trans  &trans        &kp LC(LA(RET))      &trans         &kp END        &kp HOME     &trans     &trans
-                             &kp LC(LALT)  &mo 3                &trans         &trans
+&trans     &trans    &trans    &trans        &trans    &kp LG(GRAVE)  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp DELETE
+&kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT    &trans    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans     &trans    &trans    &trans        &trans    &trans         &kp END        &kp HOME     &trans     &trans
+                               &kp LC(LALT)  &mo 3     &trans         &trans
             >;
         };
 
